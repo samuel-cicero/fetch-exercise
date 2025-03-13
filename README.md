@@ -33,8 +33,8 @@ This project was built using **NodeJS** as well as a few key packages for specif
 - Two endpoints defined in the exercise instructions were added to match the .yml openAPI spec
    - `POST receipts/process`
    - `GET receipts/{id}/points`
-- One additional API endpoint `GET receipts/78e8db9d-a2ea-4c83-8b01-e647aba1e4c4/` was added to the project to return the full reciept object post processing. This will include the points as well as a convenience.
-- Each rule was encapsulated in its own module implementing a `PointRule` and `processRule` function. This allows each rule to be defined in a consistent way as well as allows cleaner testing.
+- One additional API endpoint `GET receipts/78e8db9d-a2ea-4c83-8b01-e647aba1e4c4/` was added to the project to return the full receipt object post processing. This will include the points as well as a convenience.
+- Each rule was encapsulated in its own module implementing a `PointRule` interface with a `processRule` function. This allows each rule to be defined in a consistent way as well as allows cleaner testing.
 - API payloads and route parameters are using middleware to intercept each request and handle validation appropriately.
 - API payload are validated with [Joi](https://joi.dev/) schema for ease of implementation in this exercise, but can also be done manually as an implementation choice.
 
