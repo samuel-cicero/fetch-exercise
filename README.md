@@ -8,7 +8,7 @@
 
 ### Prerequisite
 
-- In order to run this application you must need [Docker](https://docs.docker.com/) installed on your machine. All other dependency management should be handled within the docker container itself.
+- In order to run this application you need [Docker](https://docs.docker.com/) installed on your machine. All other dependency management should be handled within the docker container itself.
 
 ### Install Steps
 
