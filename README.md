@@ -14,7 +14,7 @@
 
 1. Build the docker image
    - `docker build --no-cache -t fetch-app-sam-cicero .`
-2. 3 Run the container and expose port 3001
+2. Run the container and expose port 3001
    - `docker run -it --rm -p 3001:3000 fetch-app-sam-cicero`
 3. Access API endpoints with fully qualified routes
    - `http://localhost:3001/receipts/process`
