@@ -36,13 +36,8 @@ describe('processRuleSafe fn:', () => {
          throw new Error('Some Exception');
       });
 
-      // Call the function with the mock (simulating an error)
       const ret = processRuleSafe('TestRule', receipt, mockProcessRule);
-
-      // Check the result
       expect(ret).toBe(0);
-
-      // Ensure the correct logging occurred
       expect(logInfo).toHaveBeenCalledWith(
          `Info: Processing receipt ${receipt.id} for TestRule rule`,
       );
