@@ -1,10 +1,10 @@
 # Fetch Takehome Exercise (Backend)
 
-**Author: Sam Cicero**
+**Author: Sam Cicero 👋**
 
 <hr>
 
-##Running the Application
+## Running the Application
 
 ### Prerequisite
 
