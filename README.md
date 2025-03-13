@@ -26,7 +26,7 @@ This project was built using **NodeJS** as well as a few key packages for specif
 1. [Express](https://expressjs.com/) for API Routing
 2. [Joi](https://joi.dev/) for API Validation.
 3. [Jest](https://jestjs.io/) for Unit Testing
-3. [Playwright](https://playwright.dev/) for End-to-End Testing
+4. [Playwright](https://playwright.dev/) for End-to-End Testing
 
 ## Design Decisions / Assumptions
 

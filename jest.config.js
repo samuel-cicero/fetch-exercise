@@ -7,5 +7,5 @@ export default {
    setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
    collectCoverage: true,
    coverageReporters: ['json', 'html'],
-   testMatch: ["**/?(*.)test.ts"],
+   testMatch: ['**/?(*.)test.ts'],
 };
