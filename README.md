@@ -63,4 +63,4 @@ The project is broken up into subfolders and files with a specific organizationa
 
 - A few sanity end-to-end tests have been added to validate that the application is working in runtime. To run e2e tests, you can run the `npm run test:e2e` command from the root directory of the project. A coverage report is also supplied within the `playwright-report/` directory within the root of the project
 
-![e2e Results](./assets/images/e2e.png)
+![e2e Results](./assets/images/e2eResults.png)
