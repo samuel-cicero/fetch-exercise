@@ -1,7 +1,7 @@
 import { saveReceipt, getReceipt } from '../receiptService';
 import { getCacheItem, setCacheItem } from '../cacheService';
 
-jest.mock('../../helpers/cache', () => ({
+jest.mock('../cacheService', () => ({
    getCacheItem: jest.fn(),
    setCacheItem: jest.fn(),
 }));

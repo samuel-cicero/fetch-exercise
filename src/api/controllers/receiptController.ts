@@ -10,7 +10,8 @@ import { logInfo, logWarning } from '../../helpers/logger';
 
 const sendNotFoundResponse = (res: Response, id: string) => {
    logWarning(`Failed request to get receipt by Id:${id}. Receipt Not Found.`);
-   res.status(404).json({
+   res.status(404);
+   res.json({
       description: 'No receipt found for that ID.',
    });
 };
@@ -23,7 +24,8 @@ export const processReceipt = (
    const receipt = receiptHandler.processReceipt(req.body);
 
    logInfo(`Successfull request to process receipt. Id:${receipt?.id}`);
-   res.status(200).json({
+   res.status(200);
+   res.json({
       id: receipt?.id ?? '',
    });
 
@@ -45,7 +47,8 @@ export const getReceiptById = (
    }
 
    logInfo(`Successfull request to get receipt by Id:${receipt?.id}`);
-   res.status(200).json(receipt);
+   res.status(200);
+   res.json(receipt);
    return;
 };
 
@@ -64,7 +67,8 @@ export const getReceiptPointsById = (
 
    logInfo(`Successfull request to get receipt points by Id:${receipt?.id}`);
 
-   res.status(200).json({
+   res.status(200);
+   res.json({
       points: receipt.points ?? 0,
    });
    return;

@@ -1,4 +1,4 @@
-import { Receipt } from "../../types";
+import { Receipt } from '../../types';
 
 export type PostReceiptRequestBody = Omit<Receipt, 'id'>;
 export type PostReceiptResponse = {
