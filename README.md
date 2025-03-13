@@ -1,6 +1,6 @@
 # Fetch Takehome Exercise (Backend)
 
-**Author: Sam Cicero 👋**
+**Author: Samuel Cicero 👋**
 
 <hr>
 
@@ -26,6 +26,7 @@ This project was built using **NodeJS** as well as a few key packages for specif
 1. [Express](https://expressjs.com/) for API Routing
 2. [Joi](https://joi.dev/) for API Validation.
 3. [Jest](https://jestjs.io/) for Unit Testing
+3. [Playwright](https://playwright.dev/) for End-to-End Testing
 
 ## Design Decisions / Assumptions
 
@@ -55,3 +56,11 @@ The project is broken up into subfolders and files with a specific organizationa
 ### Unit Testing
 
 - All modules are unit tested for both positive and negative test cases when applicable. To run unit tests, you can run the `npm test` command from the root directory of the project. A coverage report is also supplied within the `coverage/` directory within the root of the project
+
+![Jest Results](./assets/images/jestResults.png)
+
+### End-to-End Testing
+
+- A few sanity end-to-end tests have been added to validate that the application is working in runtime. To run e2e tests, you can run the `npm run test:e2e` command from the root directory of the project. A coverage report is also supplied within the `playwright-report/` directory within the root of the project
+
+![e2e Results](./assets/images/e2e.png)
