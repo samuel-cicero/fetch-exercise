@@ -45,9 +45,9 @@ The project is broken up into subfolders and files with a specific organizationa
    - Contains all routes, controller, and middleware responsible for HTTP transactions within the application. By design, this layer is very light and meant as an interface for the API.
 - `handlers/`
    - Contains specific modules that handle application business logic including rules and the rule aggregator.
--     `services/`
+- `services/`
    - Contains shared modules that interact with commom modules such as persistence/cache that can be used in multiple places within the app. For example, multiple handlers may both use `receiptService` to get receipt details
-- `helpers`
+- `helpers/`
    - Common utilites that are shared acrros the application such as logging.
 
 ## Testing

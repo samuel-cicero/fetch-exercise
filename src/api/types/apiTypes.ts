@@ -1,3 +1,5 @@
+import { Receipt } from "../../types";
+
 export type PostReceiptRequestBody = Omit<Receipt, 'id'>;
 export type PostReceiptResponse = {
    id: string;
